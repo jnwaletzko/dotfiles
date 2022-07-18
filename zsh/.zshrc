@@ -116,3 +116,9 @@ if [ -f ~/.zshrc-teamsnap ]; then
 else
     print "404: ~/.zshrc-teamsnap not found."
 fi
+
+if [ -f ~/.zshrc-secure ]; then
+    source ~/.zshrc-secure
+else
+    print "404: ~/.zshrc-secure not found."
+fi
