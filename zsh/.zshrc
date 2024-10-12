@@ -77,7 +77,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k" # See https://github.com/romkatv/powerle
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git alias-tips)
+plugins=(git alias-tips asdf docker)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -94,6 +94,8 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='mvim'
 # fi
+
+export EDITOR="code -w"
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -123,3 +125,5 @@ if [ -f ~/.zshrc-secure ]; then
 else
     print "404: ~/.zshrc-secure not found."
 fi
+export PATH="/opt/homebrew/opt/curl/bin:$PATH"
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
